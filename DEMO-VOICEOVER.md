@@ -4,7 +4,7 @@
 
 1. Open the live site at desktop width.
 2. Start with `cat-hackathon-os-title-card.jpg` full-screen for four seconds.
-3. Open the live site, then use **Start demo sequence** or the four **Demo beats** controls at the bottom.
+3. Open the live site, then use **Start demo sequence** for the timed 1:40 tour or the four **Demo beats** controls at the bottom to move manually.
 4. Pause after each beat if you need more time for the narration. The interface is real; do not use a fake terminal or fabricated results.
 
 ## Script and shots

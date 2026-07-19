@@ -112,8 +112,8 @@ export default function Home() {
   };
 
   const startDemo = () => {
-    [0, 1, 2, 3].forEach((step) => {
-      window.setTimeout(() => showTourStep(step), step * 5500);
+    [0, 21_000, 45_000, 70_000].forEach((delay, step) => {
+      window.setTimeout(() => showTourStep(step), delay);
     });
   };
 
