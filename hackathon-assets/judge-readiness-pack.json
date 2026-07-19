@@ -1,0 +1,172 @@
+{
+  "top": {
+    "id": "openai-build-week-2026",
+    "name": "OpenAI Build Week",
+    "deadline": "2026-07-21T19:00:00-05:00",
+    "prizeUsd": 100000,
+    "themes": [
+      "codex",
+      "gpt-5.6",
+      "agents",
+      "developer-tools",
+      "productivity"
+    ],
+    "requirements": [
+      "public YouTube demo under 3 minutes",
+      "public repository or shared private repository",
+      "Codex session ID",
+      "README describing Codex collaboration",
+      "working demo URL or testable build"
+    ],
+    "riskFlags": [
+      "short deadline",
+      "large participant pool"
+    ],
+    "artifactLeverage": [
+      "portfolio piece",
+      "Devpost credibility marker",
+      "reusable hackathon pipeline",
+      "client-facing case study"
+    ],
+    "notes": "Best immediate fit because it rewards Codex-assisted building and judge-ready artifacts.",
+    "hoursUntilDeadline": 71,
+    "themeMatches": [
+      "codex",
+      "agents",
+      "developer-tools",
+      "productivity"
+    ],
+    "scores": {
+      "themeFit": 9,
+      "urgency": 10,
+      "artifacts": 10,
+      "prize": 10,
+      "penalty": 2,
+      "total": 77
+    },
+    "recommendation": {
+      "product": "CAT Hackathon OS",
+      "wedge": "A Codex-powered command center that ranks hackathons and generates a judge-ready sprint plan.",
+      "killerWorkflow": "Paste or load hackathon opportunities → score fit → pick target → generate sprint plan, asset checklist, and judge receipt.",
+      "firstDemo": [
+        "Show ranked opportunity radar",
+        "Open OpenAI Build Week card",
+        "Generate 72-hour sprint plan",
+        "Display required assets and missing evidence",
+        "Export judge readiness pack"
+      ]
+    }
+  },
+  "requiredAssets": [
+    {
+      "id": "live-demo",
+      "label": "Live demo URL",
+      "status": "planned",
+      "nextStep": "Publish the static dashboard after the first UI pass."
+    },
+    {
+      "id": "repo",
+      "label": "Public GitHub repository",
+      "status": "planned",
+      "nextStep": "Split or publish this project folder as a focused repo."
+    },
+    {
+      "id": "youtube",
+      "label": "Public YouTube demo under 3 minutes",
+      "status": "planned",
+      "nextStep": "Record the ranked-opportunity → sprint-plan → judge-pack flow."
+    },
+    {
+      "id": "readme",
+      "label": "README explaining Codex collaboration",
+      "status": "ready",
+      "nextStep": "Keep updated as implementation grows."
+    },
+    {
+      "id": "proof-command",
+      "label": "Local proof command",
+      "status": "ready",
+      "nextStep": "Run npm run verify before each submission checkpoint."
+    },
+    {
+      "id": "codex-session-id",
+      "label": "/feedback Codex Session ID",
+      "status": "needs-human",
+      "nextStep": "Add the session ID from the project thread before final submission."
+    }
+  ],
+  "sprint": [
+    {
+      "phase": "Hour 0-4",
+      "objective": "Lock product slice",
+      "outputs": [
+        "Opportunity scoring model",
+        "Static dashboard shell",
+        "README proof path"
+      ]
+    },
+    {
+      "phase": "Hour 4-18",
+      "objective": "Make it feel real",
+      "outputs": [
+        "Interactive radar",
+        "Sprint planner",
+        "Submission checklist",
+        "Receipt export"
+      ]
+    },
+    {
+      "phase": "Hour 18-36",
+      "objective": "Judge polish",
+      "outputs": [
+        "Hosted site",
+        "Screenshots",
+        "Devpost story draft",
+        "GitHub cleanup"
+      ]
+    },
+    {
+      "phase": "Hour 36-60",
+      "objective": "Demo and verification",
+      "outputs": [
+        "2-minute YouTube demo",
+        "Proof command passing",
+        "README evidence section"
+      ]
+    },
+    {
+      "phase": "Hour 60-72",
+      "objective": "Submission sweep",
+      "outputs": [
+        "Devpost final fields",
+        "No placeholder scan",
+        "Public link verification"
+      ]
+    }
+  ],
+  "receipt": {
+    "project": "CAT Hackathon OS",
+    "targetHackathon": "OpenAI Build Week",
+    "track": "Developer Tools / Work and Productivity",
+    "generatedAt": "2026-07-19T01:17:55.640Z",
+    "claim": "CAT can turn hackathon discovery and submission into a repeatable operating system.",
+    "evidence": [
+      "Data-driven opportunity score with explicit assumptions",
+      "Generated sprint plan tied to deadline pressure",
+      "Submission asset checklist with ready/planned/needs-human statuses",
+      "Local proof command that regenerates judge artifacts"
+    ],
+    "humanApprovalNeeded": [
+      "Final Devpost submission",
+      "YouTube upload/publish",
+      "GitHub repository creation or push",
+      "Any use of private credentials or paid services"
+    ],
+    "safeBoundaries": [
+      "No hidden credentials",
+      "No payment required for judges",
+      "No real-money trading or gambling execution",
+      "No off-platform obligations"
+    ]
+  }
+}

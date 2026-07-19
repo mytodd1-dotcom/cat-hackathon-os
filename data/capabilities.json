@@ -1,0 +1,40 @@
+{
+  "builder": "AJ + CAT",
+  "currentDate": "2026-07-18",
+  "timezone": "America/Chicago",
+  "strengths": [
+    "fast Codex-assisted implementation",
+    "agent workflows",
+    "submission polish",
+    "demo video production",
+    "public sites",
+    "GitHub proof trails",
+    "safety-gated automation",
+    "judge-facing README and receipt artifacts"
+  ],
+  "avoid": [
+    "real-money trading execution",
+    "credential collection",
+    "off-platform payment or communication requirements",
+    "projects that depend on unavailable private data",
+    "broad fake platforms with no testable core workflow"
+  ],
+  "preferredThemes": [
+    "codex",
+    "agents",
+    "developer-tools",
+    "productivity",
+    "automation",
+    "data",
+    "creator-tools"
+  ],
+  "shippingWindowHours": 72,
+  "artifactWeights": {
+    "liveDemo": 5,
+    "repo": 5,
+    "video": 4,
+    "readme": 4,
+    "proofCommand": 5,
+    "caseStudy": 3
+  }
+}

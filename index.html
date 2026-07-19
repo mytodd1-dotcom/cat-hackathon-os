@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAT Hackathon OS</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">OpenAI Build Week prototype</p>
+          <h1>Turn hackathons into a repeatable shipping engine.</h1>
+          <p class="lede">
+            CAT Hackathon OS ranks opportunities, chooses the smallest impressive workflow,
+            and generates the sprint plan, asset checklist, and judge receipt needed to ship.
+          </p>
+          <div class="hero-actions">
+            <a href="#radar">View radar</a>
+            <a href="./hackathon-assets/judge-readiness-pack.md">Open judge pack</a>
+          </div>
+        </div>
+        <aside class="status-card">
+          <span class="status-pill">Draft build</span>
+          <strong>Target: OpenAI Build Week</strong>
+          <p>Deadline: July 21, 2026, 7:00 PM CDT</p>
+          <p>Core loop: find → score → sprint → submit → compound.</p>
+        </aside>
+      </section>
+
+      <section id="radar" class="grid two">
+        <article class="panel">
+          <div class="panel-head">
+            <p class="eyebrow">Opportunity radar</p>
+            <h2>Ranked hackathon targets</h2>
+          </div>
+          <div id="opportunity-list" class="card-list" aria-live="polite"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <p class="eyebrow">Recommended build</p>
+            <h2 id="recommended-title">Loading...</h2>
+          </div>
+          <p id="recommended-wedge" class="big-copy"></p>
+          <ol id="demo-flow" class="steps"></ol>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <div class="panel-head">
+            <p class="eyebrow">Sprint plan</p>
+            <h2>72-hour path</h2>
+          </div>
+          <div id="sprint-plan" class="timeline"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <p class="eyebrow">Submission readiness</p>
+            <h2>Judge assets</h2>
+          </div>
+          <div id="asset-list" class="asset-list"></div>
+        </article>
+      </section>
+
+      <section class="panel receipt">
+        <div class="panel-head">
+          <p class="eyebrow">Receipt</p>
+          <h2>What CAT proves</h2>
+        </div>
+        <div id="receipt"></div>
+      </section>
+    </main>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

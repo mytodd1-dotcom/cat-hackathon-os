@@ -1,0 +1,81 @@
+[
+  {
+    "id": "openai-build-week-2026",
+    "name": "OpenAI Build Week",
+    "deadline": "2026-07-21T19:00:00-05:00",
+    "prizeUsd": 100000,
+    "themes": ["codex", "gpt-5.6", "agents", "developer-tools", "productivity"],
+    "requirements": [
+      "public YouTube demo under 3 minutes",
+      "public repository or shared private repository",
+      "Codex session ID",
+      "README describing Codex collaboration",
+      "working demo URL or testable build"
+    ],
+    "riskFlags": ["short deadline", "large participant pool"],
+    "artifactLeverage": [
+      "portfolio piece",
+      "Devpost credibility marker",
+      "reusable hackathon pipeline",
+      "client-facing case study"
+    ],
+    "notes": "Best immediate fit because it rewards Codex-assisted building and judge-ready artifacts."
+  },
+  {
+    "id": "cockroachdb-aws-agentic-memory-2026",
+    "name": "CockroachDB x AWS Agentic Memory",
+    "deadline": "2026-08-18T23:45:00-05:00",
+    "prizeUsd": 8750,
+    "themes": ["agents", "memory", "data", "backend", "cloud"],
+    "requirements": [
+      "working demo",
+      "repository",
+      "database-backed agent memory story"
+    ],
+    "riskFlags": ["database integration depth"],
+    "artifactLeverage": [
+      "memory subsystem",
+      "agent architecture proof",
+      "backend case study"
+    ],
+    "notes": "Strong second target after the fast OpenAI sprint."
+  },
+  {
+    "id": "backblaze-generative-media-2026",
+    "name": "Backblaze Generative Media Hackathon",
+    "deadline": "2026-08-03T23:45:00-05:00",
+    "prizeUsd": 10000,
+    "themes": ["media", "storage", "creator-tools", "automation"],
+    "requirements": [
+      "working media workflow",
+      "repository",
+      "demo video"
+    ],
+    "riskFlags": ["media rights", "storage integration"],
+    "artifactLeverage": [
+      "video pipeline",
+      "creator tooling",
+      "submission asset generator"
+    ],
+    "notes": "Good if the project pivots toward demo-video and asset generation."
+  },
+  {
+    "id": "xprize-gemini-2026",
+    "name": "Build with Gemini XPRIZE",
+    "deadline": "2026-08-17T23:45:00-05:00",
+    "prizeUsd": 2000000,
+    "themes": ["ai", "business", "social-impact", "scale"],
+    "requirements": [
+      "substantial product",
+      "business impact story",
+      "revenue or adoption evidence"
+    ],
+    "riskFlags": ["very broad scope", "high competition", "traction expected"],
+    "artifactLeverage": [
+      "longer-term product wedge",
+      "large prize narrative",
+      "business case study"
+    ],
+    "notes": "Tempting, but not the best immediate sprint unless scoped carefully."
+  }
+]

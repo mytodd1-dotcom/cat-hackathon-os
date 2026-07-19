@@ -1,0 +1,7 @@
+site/node_modules/
+site/dist/
+site/.next/
+site/.wrangler/
+site/.git/
+*.tar.gz
+.DS_Store

@@ -1,0 +1,13 @@
+{
+  "name": "cat-hackathon-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "score": "node scripts/score-opportunities.mjs",
+    "judge:pack": "node scripts/generate-judge-pack.mjs",
+    "smoke": "node scripts/smoke-static.mjs",
+    "verify": "npm run score && npm run judge:pack && npm run smoke",
+    "serve": "python3 -m http.server 4177"
+  }
+}
