@@ -99,11 +99,27 @@ const assets = [
 
 export default function Home() {
   const [selected, setSelected] = useState(0);
+  const [tourStep, setTourStep] = useState<number | null>(null);
   const chosen = opportunities[selected];
+
+  const tourTargets = ["hero", "radar", "sprint", "proof"];
+  const tourLabels = ["The problem", "The radar", "The sprint", "The proof"];
+
+  const showTourStep = (step: number) => {
+    setTourStep(step);
+    if (step === 1) setSelected(0);
+    document.getElementById(tourTargets[step])?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const startDemo = () => {
+    [0, 1, 2, 3].forEach((step) => {
+      window.setTimeout(() => showTourStep(step), step * 5500);
+    });
+  };
 
   return (
     <main className="shell">
-      <section className="hero" aria-labelledby="page-title">
+      <section id="hero" className={`hero ${tourStep === 0 ? "tour-focus" : ""}`} aria-labelledby="page-title">
         <div className="hero-copy">
           <p className="eyebrow">CAT // Hackathon OS</p>
           <h1 id="page-title">Ship the right thing before the clock runs out.</h1>
@@ -113,7 +129,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a href="#radar">Explore the radar</a>
-            <a href="#proof">See the proof layer</a>
+            <button type="button" className="tour-button" onClick={startDemo}>Start demo sequence</button>
           </div>
         </div>
         <aside className="signal-card" aria-label="Current recommendation">
@@ -124,7 +140,7 @@ export default function Home() {
         </aside>
       </section>
 
-      <section id="radar" className="section-grid" aria-label="Opportunity radar">
+      <section id="radar" className={`section-grid ${tourStep === 1 ? "tour-focus" : ""}`} aria-label="Opportunity radar">
         <article className="panel radar-panel">
           <div className="panel-head">
             <p className="eyebrow">Opportunity radar</p>
@@ -161,7 +177,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section className="section-grid second-grid" aria-label="Sprint and readiness">
+      <section id="sprint" className={`section-grid second-grid ${tourStep === 2 ? "tour-focus" : ""}`} aria-label="Sprint and readiness">
         <article className="panel">
           <div className="panel-head"><p className="eyebrow">72-hour sprint</p><h2>Make the deadline do the work.</h2></div>
           <div className="timeline">
@@ -181,7 +197,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section id="proof" className="proof panel" aria-label="Judge proof layer">
+      <section id="proof" className={`proof panel ${tourStep === 3 ? "tour-focus" : ""}`} aria-label="Judge proof layer">
         <div className="panel-head"><p className="eyebrow">Judge receipt</p><h2>Claim less. Prove more.</h2></div>
         <p className="proof-lede">CAT Hackathon OS turns hackathon discovery and submission into a repeatable operating system—with explicit assumptions, evidence, and human approval gates.</p>
         <div className="proof-grid">
@@ -190,6 +206,20 @@ export default function Home() {
           <div><span>Proof command</span><code>npm run verify</code><p>Regenerates the scored opportunities and judge readiness artifacts.</p></div>
         </div>
       </section>
+
+      <aside className="demo-console" aria-label="Demo recording controls">
+        <span>Demo beats</span>
+        {tourLabels.map((label, index) => (
+          <button
+            type="button"
+            className={tourStep === index ? "active" : ""}
+            onClick={() => showTourStep(index)}
+            key={label}
+          >
+            {String(index + 1).padStart(2, "0")} {label}
+          </button>
+        ))}
+      </aside>
 
       <footer><span>Built for OpenAI Build Week</span><span>CAT makes shipping visible.</span></footer>
     </main>
