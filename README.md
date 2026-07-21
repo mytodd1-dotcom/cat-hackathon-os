@@ -68,10 +68,13 @@ cd site
 npm run build
 ```
 
-## How Codex collaborated
+## How GPT-5.6 and Codex collaborated
 
-CAT Hackathon OS was created as an OpenAI Build Week project with Codex as the
-implementation partner. The collaboration focused on three deliberate jobs:
+CAT Hackathon OS was created during OpenAI Build Week with GPT-5.6 and Codex.
+GPT-5.6 helped pressure-test the product narrative, reduce the broad concept to
+a credible build wedge, and turn that wedge into concrete acceptance checks.
+Codex was the implementation partner. The collaboration focused on three
+deliberate jobs:
 
 1. turning a loosely defined hackathon-search process into an inspectable
    scoring model;
@@ -80,9 +83,18 @@ implementation partner. The collaboration focused on three deliberate jobs:
    verification command.
 
 Codex was used for code generation, interface implementation, artifact
-generation, test/smoke checks, and packaging. Human approval remains required
-for external submissions, publication, credentials, payments, and any action
-that could create an obligation.
+generation, test/smoke checks, and packaging. Todd made the final product,
+design, scope, and publication decisions. Human approval remains required for
+external submissions, publication, credentials, payments, and any action that
+could create an obligation.
+
+## Judge testing path
+
+- **Supported platform:** modern desktop or mobile web browser.
+- **Live demo:** https://cat-hackathon-os.flyguy.chatgpt.site
+- **No test account, payment, or installation is required** for the live demo.
+- **Local verification:** clone the repository, run `npm install`, then run
+  `npm run verify`; for the dashboard, run `cd site && npm install && npm run build`.
 
 ## What is new during OpenAI Build Week
 
